@@ -1,0 +1,10 @@
+yaml
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: imc-calculator
+    ports:
+      - "8080:5000"
+    restart: unless-stopped
